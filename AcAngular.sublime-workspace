@@ -1,0 +1,347 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"visitorItem",
+				"visitorItemParsed"
+			],
+			[
+				"visitorInfo",
+				"visitorInfoData"
+			],
+			[
+				"glob",
+				"globalData"
+			],
+			[
+				"ci",
+				"cityWeather"
+			],
+			[
+				"get",
+				"getCurrentWeather"
+			],
+			[
+				"API",
+				"API_KEY_URL"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"com",
+				"com"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"bacg",
+				"background-size"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"wd",
+				"width"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"backgo",
+				"background"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/index2.html",
+			"settings":
+			{
+				"buffer_size": 257,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 307.0,
+		"selected_items":
+		[
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"les",
+				"Set Syntax: LESS"
+			],
+			[
+				"LESS",
+				"Set Syntax: LESS"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/Andrew/Local/AC/aC/index.html",
+		"/Volumes/Andrew/Local/AC/aC/js/scripts.js",
+		"/Volumes/Andrew/Local/AC/aC/css/less/style.less",
+		"/Volumes/Andrew/Local/AC/aC/gulpfile.js",
+		"/Volumes/Andrew/Local/AC/aC/package.json",
+		"/Volumes/Andrew/Local/Sagrado/sagrado/wp-content/themes/sagrado/content-single.php",
+		"/Volumes/Andrew/Local/Sagrado/sagrado/wp-content/themes/sagrado/css/less/general.less",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1426014915/goldRock/app/success-criteria/json.html",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1426012123/goldRock/experiments/new.html",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1425755845/goldRock/test.html",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1425595809/goldRock/css/style.less",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1425595788/goldRock/business-ideas/new.html",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1425768242/goldRock/app/supositions/supositions.html",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1425766331/goldRock/business-ideas/index.html",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1425766392/goldRock/index.htm",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1425596049/goldRock/experiments/new.html",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1425768696/goldRock/Templates/home.html",
+		"/var/folders/34/7dkjvnk54gd0l4y06kbftlyw0000gn/T/sublime-sftp-browse-1425765203/goldRock/index.htm",
+		"/Volumes/Andrew/Local/Claim Disney/Claim-Disney/.env",
+		"/Volumes/Andrew/Producción/Produccion2015/Compulearning 2015/EduCo/Tabla Precios/estilo.css",
+		"/Volumes/Andrew/Producción/Produccion2015/Compulearning 2015/EduCo/Tabla Precios/tabla.html",
+		"/Volumes/Andrew/Producción/Produccion2015/Compulearning 2015/EduCo/Tabla Precios/estilo.less",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/app/Http/routes.php",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/app/Http/Controllers/PagesController.php",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/resources/views/layouts/master.blade.php",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/resources/views/pages/home.blade.php",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/public/css/app.less",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/resources/views/pages/about.blade.php",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/public/css/style.css",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/public/css/app.css",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/resources/views/home.blade.php",
+		"/Volumes/Andrew/Local/GoldRock/goldRock/app/Http/Controllers/HomeController.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"div",
+			"							position: absolute;",
+			"width: 200px;\n							height: 200px;",
+			"display: inline-block;",
+			"div",
+			"des",
+			"hover",
+			"article class=\"step",
+			"newExperiment",
+			"<p>Test</p>",
+			"supositionsItems",
+			"triggerSupositions",
+			"riskiest suposition",
+			"triggerSupositions",
+			"the riskiest suposition",
+			"triggerSupositions",
+			"the riskiest suposition",
+			"a",
+			"<p>or</p>",
+			"var ",
+			"\"",
+			"API_KEY_URL",
+			"<br />",
+			"                </td>",
+			"            </tr>",
+			"                <td>",
+			"<tr>",
+			"</article>",
+			"<br />",
+			"</td>",
+			"<td>",
+			"<tr>",
+			"BusinessIdea"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/index2.html",
+					"settings":
+					{
+						"buffer_size": 257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

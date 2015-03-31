@@ -1,0 +1,386 @@
+/* latin-ext */
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCD5K6T8I4oZ1X3Xvlj_UeP3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGDOFnJNygIkrHciC8BWzbCz3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCP2LEk6lMzYsRqr3dHFImA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlCxe5Tewm2_XWfbGchcXw4g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlIa1YDtoarzwSXxTHggEXMw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMZXFz2iDKd7GJNSaxRYiSj3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGKyGJhAh-RE0BxGcd_izyev3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMzFoXZ-Kj537nB_-9jJhlA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMms7UHsIbjUxEJqIwog-i_3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGO4s1Ux4PuImWPk5fSr6HPL3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM-hx0s8EczIZ6Z1k6LZjTLo.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoMyVjDpjOAxwEYJFCET2nD1s.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM2Sl3jWJ3D9poyJPMfASioc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+.absoluteCenter {
+  position: relative;
+  top: 50%;
+}
+.center {
+  text-align: center;
+}
+html {
+  height: 100%;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background: red;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+body h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+body h2 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+body h3 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+body h4 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+body h5 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+body h6 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+body p {
+  font-size: 1.13rem;
+}
+body a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: #009cc1;
+}
+body a:hover {
+  color: #00668e;
+}
+body .center {
+  text-align: center;
+}
+body .dark a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: #009cc1;
+}
+body .dark a:hover {
+  color: #5be0ff;
+}
+body header .mobileMenutrigger {
+  position: absolute;
+  width: 45px;
+  height: 50px;
+  display: inline-block;
+  background: rgba(241, 242, 235, 0.7);
+  left: 2%;
+  top: 2%;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+body header .mobileMenutrigger:hover {
+  background: #f1f2eb;
+}
+body header nav {
+  display: none;
+}
+body header nav ul {
+  list-style: none;
+}
+body header nav ul li:first-child {
+  font-size: 3rem;
+  font-weight: 600;
+}
+body .container {
+  margin: 0 auto;
+  height: 100%;
+}
+body .container .section {
+  display: block;
+  vertical-align: top;
+  min-height: 100%;
+  margin: 0 auto;
+  height: 100%;
+  color: #001926;
+}
+body .container .section .wrapper {
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 6% 20px;
+}
+body .container .section.dark {
+  color: #f1f2eb;
+}
+body .container .section#home {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  max-width: 1280px;
+}
+body .container .section#home:before {
+  content: 'EXPERT';
+  color: rgba(0, 156, 193, 0.15);
+  opacity: 0.5;
+  font-size: 16rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 28%;
+}
+body .container .section#home h1.name {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-85%);
+}
+body .container .section#home h4.specialty {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  top: 50%;
+  transform: translateY(-255%);
+}
+body .container .section#home .down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 30px;
+}
+body .container .section#skills {
+  height: auto;
+  width: 100%;
+  background: #f1f2eb;
+}
+body .container .section#skillsDetail {
+  height: auto;
+  width: 100%;
+  background: #f1f2eb;
+}
+body .container .section#skillsDetail .wrapper {
+  padding-top: 0;
+}
+body .container .section#skillsDetail .wrapper #diamond {
+  display: block;
+  width: 496px;
+  height: 540px;
+  margin: 0 auto;
+  position: relative;
+}
+body .container .section#skillsDetail .wrapper #diamond a {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform: rotate(45deg);
+  background: #001926;
+}
+body .container .section#skillsDetail .wrapper #diamond a span {
+  transform: rotate(-45deg);
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  left: 2%;
+  top: 44%;
+  right: 7%;
+  color: #f1f2eb;
+}
+body .container .section#skillsDetail .wrapper #diamond a.active,
+body .container .section#skillsDetail .wrapper #diamond a:hover {
+  background: #009cc1;
+}
+body .container .section#skillsDetail .wrapper #diamond a:nth-child(1) {
+  left: 0;
+  top: 190px;
+}
+body .container .section#skillsDetail .wrapper #diamond a:nth-child(2) {
+  right: 0;
+  top: 190px;
+}
+body .container .section#skillsDetail .wrapper #diamond a:nth-child(3) {
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  margin: 0 auto;
+}
+body .container .section#skillsDetail .wrapper #diamond a:nth-child(4) {
+  right: 0;
+  left: 0;
+  top: 40px;
+  margin: 0 auto;
+}
+body .container .section#skillsDetail .wrapper #options {
+  text-align: center;
+  margin-top: 40px;
+}
+body .container .section#skillsDetail .wrapper #options .one,
+body .container .section#skillsDetail .wrapper #options .two,
+body .container .section#skillsDetail .wrapper #options .three,
+body .container .section#skillsDetail .wrapper #options .four {
+  width: 80%;
+  margin: 0 auto;
+  display: none;
+}
+body .container .section#skillsDetail .wrapper #options .one p,
+body .container .section#skillsDetail .wrapper #options .two p,
+body .container .section#skillsDetail .wrapper #options .three p,
+body .container .section#skillsDetail .wrapper #options .four p {
+  width: 50%;
+  padding: 0px 4%;
+  box-sizing: border-box;
+}
+body .container .section#skillsDetail .wrapper #options .one p:nth-child(odd),
+body .container .section#skillsDetail .wrapper #options .two p:nth-child(odd),
+body .container .section#skillsDetail .wrapper #options .three p:nth-child(odd),
+body .container .section#skillsDetail .wrapper #options .four p:nth-child(odd) {
+  float: left;
+}
+body .container .section#skillsDetail .wrapper #options .one p:nth-child(even),
+body .container .section#skillsDetail .wrapper #options .two p:nth-child(even),
+body .container .section#skillsDetail .wrapper #options .three p:nth-child(even),
+body .container .section#skillsDetail .wrapper #options .four p:nth-child(even) {
+  float: right;
+}
+body .container .section#skillsDetail .wrapper #options .one.active,
+body .container .section#skillsDetail .wrapper #options .two.active,
+body .container .section#skillsDetail .wrapper #options .three.active,
+body .container .section#skillsDetail .wrapper #options .four.active {
+  display: inline-block;
+}
+body footer {
+  height: 50px;
+  background: #009cc1;
+  color: #f1f2eb;
+}

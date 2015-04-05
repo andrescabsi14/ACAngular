@@ -3,43 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Andrés Cabrera</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/wow.css">
 	<script src="/node_modules/angular/angular.js"></script>
 	<script src="/node_modules/jquery/dist/jquery.js"></script>
 	<script src="js/animatedModal.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZBOOXAorjR8fg4LKBPYz6yFoAC-NhsjY&sensor=false"></script>
-	<script src="js/scripts.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 	<header>
-		<div class="mobileMenutrigger"></div>
-		<nav>
+		<div id="mobileMenutrigger" class="mobileMenutrigger">
+			<span class="icon ac-navicon-round"></span>
+			<p>MENU</p>
+		</div>
+		<nav id="mobileMenu">
 			<ul>
-				<li>ANDRÉS CABRERA</li>
+				<li class="name">ANDRÉS CABRERA</li>
 				<div class="line"></div>
-				<li>SKILLS</li>
-				<li>PORTFOLIO</li>
-				<li>MY SPACE</li>
-				<li>TESTIMONIALS</li>
-				<li>CONTACT</li>
+				<li class="item"><a href="">SKILLS</a></li>
+				<li class="item"><a href="">PORTFOLIO</a></li>
+				<li class="item"><a href="">MY SPACE</a></li>
+				<li class="item"><a href="">TESTIMONIALS</a></li>
+				<li class="item"><a href="">CONTACT</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section class="container">
+	<section id="firstSection" class="container">
 		<section id="home" class="section dark">
 			<div class="wrapper">
+				<span class="language"><a class="active" href="">EN</a> / <a href="">SP</a></span>
 				<h1 class="name wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">ANDRÉS CABRERA</h1>
 				<h4 class="specialty wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">Front-End Developer</h4>
 				<div class="line"></div>
-				<div class="down wow zoomInUp" data-wow-duration="0.8s" data-wow-delay="0.9s">Welcome</div>
+				<div class="down wow zoomInUp" data-wow-duration="0.8s" data-wow-delay="0.9s"><span class="icon ac-rocket"></span>  Welcome</div>
 			</div>
 		</section>
 		<section id="skills" class="section">
 			<div class="wrapper center">
 				<h2>WHAT I DO</h2>
+				<h6>Out of the world dev</h6>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
 
@@ -49,57 +58,61 @@
 		<section id="skillsDetail" class="section">
 			<div class="wrapper">
 				
-				<div id="diamond" class="wow bounceInUp" data-wow-duration="0.7s" data-wow-delay="0.7s">
-					<a id="modal01" href="#modal-01"><span>PHP</span></a>
-					<a id="modal02" href="#modal-02"><span>Python</span></a>
-					<a id="modal03" href="#modal-03"><span>Javascript</span></a>
-					<a id="modal04" href="#modal-04"><span>CSS</span></a>
+				<div id="diamond" class="wow bounceInUp" data-wow-duration="0.7s" data-wow-delay="0.2s">
+					<a id="modal01" href="#modal-01"><span>Wordpress - Business Catalyst - Drupal</span></a>
+					<a id="modal02" href="#modal-02"><span>LESS - SASS - GULP - JS - Responsive</span></a>
+					<a id="modal03" href="#modal-03"><span>Django - Laravel</span></a>
+					<a id="modal04" href="#modal-04"><span>Angular - Backbone</span></a>
 				</div>
 
 			</div>
 		</section>
-		<section id="portfolio" class="section dark">
+		<section id="method" class="section dark">
 			<div class="wrapper">
-				<h2>PORTFOLIO</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
+				<h2 class="center">METHOD</h2>
+				<div class="textLeft">
+					<p>Gracias a mi experienica de más de 4 años en importantes proyectos y agencias exigentes entiendo la importancia de tener desarrollos organizados, documentados y optimizados para tener resultados excelentes, en donde puedan trabajar otras personas de su equipo, sin que el trabajo colaborativo se convierta en una pesadilla. Por esa razón utilizo métodos avanzados de optimización de cada proyecto en el que trabajo, además de llevar un control de versiones del desarrollo. Trabajo con pre-procesadores css como LESS, SASS y Stylus, con variables y estructuras nested para que la lectura del código sea rápida y sencilla, en el que hacer cambios sea una cuestion de minutos y no de horas.</p>
 
-				<h4>Fortasse id optimum, sed ubi illud: Plus semper voluptatis?</h4>
+					<p>Durante los últimos años me he acostumbrado a desarrollar código con los últimos estándares. Cuando algún proyecto lo requiere, desarrollo estilos personalizados para navegadores antiguos como IE8+, Firefox 33+ entre otros, además de probar cada proyecto con los principales navegadores y simuladores de dispositivos móviles, además de pruebas en dispositivos reales para obtener un proyecto uniforme. </p>
+				</div>
+				<div class="iconLeft">
+					<span class="icon ac-speedometer"></span>
+				</div>
 
-				<p>Quae fere omnia appellantur uno ingenii nomine, easque virtutes qui habent, ingeniosi vocantur. Hic nihil fuit, quod quaereremus. Quicquid porro animo cernimus, id omne oritur a sensibus; Duo enim genera quae erant, fecit tria. Isto modo ne improbos quidem, si essent boni viri. Quamquam id quidem, infinitum est in hac urbe; Facile est hoc cernere in primis puerorum aetatulis. At multis malis affectus. </p>
+				<div class="iconRight">
+					<span class="icon ac-atom"></span>
+				</div>
+				<div class="textRight">
+					<p>La mejor forma de trabajar en un proyecto web es tener diferentes entornos de desarrollo. Por ejemplo en la versión de desarrollo de un proyecto dejo documentado todo el código con comentarios, tanto en CSS como en Javascript y HTML. Después de terminado el desarrollo comienza la etapa de Q.A. (Quality Asurance)para asegurarme de que su proyecto quede perfectamente terminado, sin bugs ni errores. Para realizar esta etapa configuro un servidor de staging para hacer pruebas en entornos de producción reales, sin que su aplicación o sitio actual se vea afectado.</p>
 
-				<h5>Vitae autem degendae ratio maxime quidem illis placuit quieta.</h5>
+					<p>Después del QA el proyecto será probado por usted y su quipo, en donde si existen ajustes por hacer, se realizarán. Finalmente optimizo cada archivo Javascript, CSS y HTML para que su código esté minificado, sin comentarios ni espacios innecesarios para mejorar los tiempos de carga de su desarrollo. Esta optimización ayudará de forma significativa al SEO de su proyecto y disminuirá hasta el 50% el peso del proyecto.</p>
+				</div>
 
-				<p><a href='http://loripsum.net/' target='_blank'>Itaque ab his ordiamur.</a> Dicimus aliquem hilare vivere; <a href='http://loripsum.net/' target='_blank'>Nam de isto magna dissensio est.</a> Deinde qui fit, ut ego nesciam, sciant omnes, quicumque Epicurei esse voluerunt? Hos contra singulos dici est melius. Nemo igitur esse beatus potest. Nam ante Aristippus, et ille melius. Quodsi ipsam honestatem undique pertectam atque absolutam. Sed hoc sane concedamus. </p>
+				<p>Entregaremos el repositorio, las versiones de desarrollo y producción de su proyecto a través de correo en un archivo ZIP o RAR.</p>
 
-				<p><a href='http://loripsum.net/' target='_blank'>Eam stabilem appellas.</a> Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quid est igitur, cur ita semper deum appellet Epicurus beatum et aeternum? Primum divisit ineleganter; </p>
+				<p>La comunicación es un elemento escencial para asegurme de cumplir con sus expectativas, por esa razón estaré en constante comunicación con usted y los miembros de su equipo que designe para el proyecto.</p>
+				
 
-				<h6>Itaque hic ipse iam pridem est reiectus;</h6>
-
-				<p>Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Ita graviter et severe voluptatem secrevit a bono. Et quod est munus, quod opus sapientiae? Ait enim se, si uratur, Quam hoc suave! dicturum. Facile est hoc cernere in primis puerorum aetatulis. Pugnant Stoici cum Peripateticis. Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Si longus, levis. </p>
+				<p><strong>Me gustaría contarle cómo mi método de desarrollo puede aplicarse para su próximo proyecto</strong></p>
+				<a href=""><span class="icon ac-talk-chat"></span>  Hablemos</a>
+			</div>
+		</section>
+		<section id="portfolio" class="section">
+			<div class="wrapper">
+				<h2 class="center">PORTFOLIO</h2>
+				<p class="center">This is the latest projects that I've done. I have worked developing projects for some of the most recognized companies in the world like ESPN, Disney, FIAT, Movie Films, Foundations among others. Due confidential agreements I cannot publish this projects but if you want to take a look at this portfolio just click the button below:</p>
+				<p><a href=""><span class="icon ac-lock"></span> Access private portfolio</a></p>
 
 
 			</div>
 		</section>
 		<section id="testimonials" class="section">
 			<div class="wrapper">
-				<h2>What people say about me</h2>
-				<h3>Tum ille timide vel potius verecunde: Facio, inquit.</h3>
+				<h4>What people say about me</h4>
+				<h6>Out of the world dev</h6>
+				
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
 
-				<h4>Fortasse id optimum, sed ubi illud: Plus semper voluptatis?</h4>
-
-				<p>Quae fere omnia appellantur uno ingenii nomine, easque virtutes qui habent, ingeniosi vocantur. Hic nihil fuit, quod quaereremus. Quicquid porro animo cernimus, id omne oritur a sensibus; Duo enim genera quae erant, fecit tria. Isto modo ne improbos quidem, si essent boni viri. Quamquam id quidem, infinitum est in hac urbe; Facile est hoc cernere in primis puerorum aetatulis. At multis malis affectus. </p>
-
-				<h5>Vitae autem degendae ratio maxime quidem illis placuit quieta.</h5>
-
-				<p><a href='http://loripsum.net/' target='_blank'>Itaque ab his ordiamur.</a> Dicimus aliquem hilare vivere; <a href='http://loripsum.net/' target='_blank'>Nam de isto magna dissensio est.</a> Deinde qui fit, ut ego nesciam, sciant omnes, quicumque Epicurei esse voluerunt? Hos contra singulos dici est melius. Nemo igitur esse beatus potest. Nam ante Aristippus, et ille melius. Quodsi ipsam honestatem undique pertectam atque absolutam. Sed hoc sane concedamus. </p>
-
-				<p><a href='http://loripsum.net/' target='_blank'>Eam stabilem appellas.</a> Igitur neque stultorum quisquam beatus neque sapientium non beatus. Quid est igitur, cur ita semper deum appellet Epicurus beatum et aeternum? Primum divisit ineleganter; </p>
-
-				<h6>Itaque hic ipse iam pridem est reiectus;</h6>
-
-				<p>Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Ita graviter et severe voluptatem secrevit a bono. Et quod est munus, quod opus sapientiae? Ait enim se, si uratur, Quam hoc suave! dicturum. Facile est hoc cernere in primis puerorum aetatulis. Pugnant Stoici cum Peripateticis. Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Si longus, levis. </p>
 			</div>
 		</section>
 		<section id="contact" class="section dark center">
@@ -123,7 +136,8 @@
 	<div class="modalContent" id="modal-01">
 	    <div id="btn-close-modal" class="close-modal-01">X</div>
 	    <div class="modal-content">
-	    	<h2>PHP</h2>
+	    	<h2>Wordpress - Business Catalyst - Drupal</h2>
+	    	<hr>
 	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
 	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
 	    </div>
@@ -133,16 +147,19 @@
 	<div class="modalContent" id="modal-02">
 	    <div id="btn-close-modal" class="close-modal-02">X</div>
 	    <div class="modal-content">
-	    	<h2>Python</h2>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
-	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
+	    	<h2>Less, Sass, Gulp, JS, Responsive</h2>
+	    	<hr>
+	        <p>Una de las características más valoradas como Front-end developer es optimizar mi trabajo, tiempos de desarrollo y escribir un código organizado, documentado y entendible, para que cualquier desarrollador pueda continuar desarrollando cualquier proyecto que he realizado. Es por esta razón que utilizo herramientas de minificación de código javascript, y métodos de maquetación HTML5 como CSS3 y  
+
+	         para que cada desarrollo  con métodos avanzados de maquetación html, css y javascript, asi como manejadores de paquetes, optimizadores de código como Gulp y pre-procesadores de css como less, sass y stylus. La mayoría de los proyectos en los que trabajo utilizan diseños responsive desde 0 a través de media queries aunque también tengo conocimientos de frameworks como Bootstrap y Foundation.</p>
 	    </div>
 	</div>
 	<!--MODAL03-->
 	<div class="modalContent" id="modal-03">
 	    <div id="btn-close-modal" class="close-modal-03">X</div>
 	    <div class="modal-content">
-	    	<h2>Javascript</h2>
+	    	<h2>Django - Laravel</h2>
+	    	<hr>
 	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
 	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
 	    </div>
@@ -151,16 +168,28 @@
 	<div class="modalContent" id="modal-04">
 	    <div id="btn-close-modal" class="close-modal-04">X</div>
 	    <div class="modal-content">
-	    	<h2>CSS</h2>
+	    	<h2>Angular - Backbone</h2>
 	    	<hr>
 	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
 	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
 	    </div>
 	</div><!-- End Modals -->
+
+	<article style="width: 100%; height: 100%;" id="parallaxBg">
+		<ul style="width: 100%; height: 100%; padding: 0; margin: 0;" id="scene" class="scene border fill">
+		  <!-- <li class="layer expand-width" data-depth="0.50">
+		  	<div style="background-size: cover; width: 100%;">
+		  		<img src="http://matthew.wagerfield.com/parallax/assets/images/background.jpg" alt="">
+		  	</div>
+		  </li> -->
+		  <li style=" width: 10000px; height: 10000px;" class="layer expand-width" data-depth="1.80">
+		  	<div style="opacity: 0.2; width: 500%; height: 100%; background: url('https://33.media.tumblr.com/tumblr_lyholoVeUH1qg95ipo1_500.gif') repeat;"></div>
+		  </li>
+		</ul>
+	</article>
+
 	<footer class="center">
 		<p>® Andres E. Cabrera S.    All rights reserved 2015 <a href="">Terms</a>  |  <a href="">Privacy policy</a></p>
 	</footer>
-	
-	
 </body>
 </html>

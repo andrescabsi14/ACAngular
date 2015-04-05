@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		#scene{
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="container" class="container">
+	  <ul id="scene" class="scene border fill">
+	    <li class="layer expand-width" data-depth="0.50">
+	    	<div style="background-size: cover; width: 100%;">
+	    		<img src="http://matthew.wagerfield.com/parallax/assets/images/background.jpg" alt="">
+	    	</div>
+	    </li>
+	    <li class="layer expand-width" data-depth="1.80">
+	    	<img src="http://4.bp.blogspot.com/_AuTEvUYi4Ms/TTt7IuU0M4I/AAAAAAAABPk/xpiLcRZ7v5E/s1600/Snow_With_Black_Background.png" alt="">
+	    </li>
+	  </ul>
+	</div>
+	<script src="js/parallax.min.js"></script>
+	<script>
+
+	// Nothing new here...it's all in the CSS!
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+</body>
+</html>

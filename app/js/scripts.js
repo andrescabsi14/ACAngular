@@ -8,6 +8,8 @@ $(document).ready(function(){
 	triggerModals();
 	customMap();
 	wowAnimations();
+	mobileMenu();
+	parallaxJS();
 });
 
 function heightTopPosition(selector, container){
@@ -98,4 +100,16 @@ function wowAnimations(){
 	  }
 	);
 	wow.init();
+}
+
+function mobileMenu(){
+	$('#mobileMenutrigger').click(function(){
+		$(this).toggleClass('active');
+		$('#mobileMenu').toggleClass('active');
+	});
+}
+
+function parallaxJS(){
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
 }

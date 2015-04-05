@@ -4,12 +4,36 @@
 		"selected_items":
 		[
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"margin",
 				"margin-bottom"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"20px",
+				"20px"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"overflow",
+				"overflow-y"
+			],
+			[
+				"rig",
+				"right"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"text",
+				"text-align"
 			],
 			[
 				"font",
@@ -76,10 +100,26 @@
 	"buffers":
 	[
 		{
-			"file": "app/index2.html",
+			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 257,
+				"buffer_size": 14081,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/less/style.less",
+			"settings":
+			{
+				"buffer_size": 14176,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/js/scripts.js",
+			"settings":
+			{
+				"buffer_size": 4633,
 				"line_ending": "Unix"
 			}
 		}
@@ -87,16 +127,16 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 307.0,
+		"height": 227.0,
 		"selected_items":
 		[
 			[
-				"less",
-				"Set Syntax: LESS"
-			],
-			[
 				"html",
 				"Set Syntax: HTML"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
 			],
 			[
 				"javascript",
@@ -131,7 +171,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 476.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -148,6 +188,14 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Andrew/Local/AC/ACAngular/app/index3.html",
+		"/Volumes/Andrew/Local/AC/ACAngular/app/js/parallax.js",
+		"/Volumes/Andrew/Local/AC/ACAngular/app/js/animatedModal.min.js",
+		"/Volumes/Andrew/Local/AC/ACAngular/app/js/parallax.min.js",
+		"/Volumes/Andrew/Local/AC/ACAngular/app/css/wow.css",
+		"/Volumes/Andrew/Local/AC/ACAngular/app/js/wow.min.js",
+		"/Volumes/Andrew/Local/AC/ACAngular/gulpfile.js",
+		"/Volumes/Andrew/Local/AC/ACAngular/app/index2.html",
 		"/Volumes/Andrew/Local/AC/aC/index.html",
 		"/Volumes/Andrew/Local/AC/aC/js/scripts.js",
 		"/Volumes/Andrew/Local/AC/aC/css/less/style.less",
@@ -197,6 +245,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Left",
+			"h4",
+			"mobileMenu",
+			".name",
+			"http://matthew.wagerfield.com/parallax/assets/images/wave-paint.png",
+			"<button>",
+			"hidden",
+			"overf",
+			"<img src=\"layer",
+			"href=\"\"></a>",
+			"</a>",
+			" class=\"wow fadeInLeft\" data-wow-duration=\"0.7s\" data-wow-delay=\"0.2s\"",
+			"fadeInUp",
+			"expert",
+			"// color:'#3498db',\n	    // Callbacks\n	    beforeOpen: function() {\n	        console.log(\"The animation was called\");\n	    },           \n	    afterOpen: function() {\n	        console.log(\"The animation is completed\");\n	    }, \n	    beforeClose: function() {\n	        console.log(\"The animation was called\");\n	    }, \n	    afterClose: function() {\n	        console.log(\"The animation is completed\");\n	    }",
 			"div",
 			"							position: absolute;",
 			"width: 200px;\n							height: 200px;",
@@ -247,23 +310,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/index2.html",
+					"file": "app/index.html",
 					"settings":
 					{
-						"buffer_size": 257,
+						"buffer_size": 14081,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								7022,
+								7022
 							]
 						],
 						"settings":
@@ -271,10 +334,70 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1501.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/less/style.less",
+					"settings":
+					{
+						"buffer_size": 14176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9219,
+								9219
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4682.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/js/scripts.js",
+					"settings":
+					{
+						"buffer_size": 4633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4631,
+								4631
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 946.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

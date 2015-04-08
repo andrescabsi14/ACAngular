@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Andrés Cabrera</title>
@@ -9,13 +9,27 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/wow.css">
-	<script src="/node_modules/angular/angular.js"></script>
-	<script src="/node_modules/jquery/dist/jquery.js"></script>
-	<script src="js/animatedModal.min.js"></script>
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.transitions.css">
+	<!--<script src="/node_modules/angular/angular.js"></script>-->
+	<!--<script src="../node_modules/jquery/dist/jquery.js"></script>-->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/animatedModal.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZBOOXAorjR8fg4LKBPYz6yFoAC-NhsjY&sensor=false"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/parallax.min.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="/js/wow.min.js"></script>
+	<script src="/js/parallax.min.js"></script>
+	<script src="/js/owl.carousel.min.js"></script>
+	<script src="/js/scripts.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-61613408-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 	<header>
@@ -50,7 +64,7 @@
 				<h2>WHAT I DO</h2>
 				<h6>Out of the world dev</h6>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Est autem a te semper dictum nec gaudere quemquam nisi propter corpus nec dolere. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. <a href='http://loripsum.net/' target='_blank'>Cave putes quicquam esse verius.</a> Paupertas si malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Primum in nostrane potestate est, quid meminerimus? Quasi ego id curem, quid ille aiat aut neget. </p>
+				<p>Tengo experiencia en una amplia variedad de lenguajes de programación, para ajustarse a diferentes tipos de proyectos y necesidades. Desde aplicaciones complejas hasta sitios web administrables o de una sola página, he desarrollado proyectos web para pequeñas, medianas y grandes empresas multinacionales durante los últimos 5 años.</p>
 
 
 			</div>
@@ -94,32 +108,216 @@
 				
 
 				<p><strong>Me gustaría contarle cómo mi método de desarrollo puede aplicarse para su próximo proyecto</strong></p>
-				<a href=""><span class="icon ac-talk-chat"></span>  Hablemos</a>
+				
+				<div class="center">
+					<a class="button" href=""><span class="icon ac-talk-chat"></span>  Hablemos</a>
+				</div>
 			</div>
 		</section>
 		<section id="portfolio" class="section">
 			<div class="wrapper">
 				<h2 class="center">PORTFOLIO</h2>
-				<p class="center">This is the latest projects that I've done. I have worked developing projects for some of the most recognized companies in the world like ESPN, Disney, FIAT, Movie Films, Foundations among others. Due confidential agreements I cannot publish this projects but if you want to take a look at this portfolio just click the button below:</p>
-				<p><a href=""><span class="icon ac-lock"></span> Access private portfolio</a></p>
+				<p class="copy center">This is the latest projects that I've done. I have worked developing projects for some of the most recognized companies in the world like ESPN, Disney, FIAT, Movie Films, Foundations among others. Due confidential agreements I cannot publish this projects but if you want to take a look at this portfolio just click the button below:</p>
 
+				<div id="portfolioCarousel">
+					<div class="item">
+						<div class="img">
+							<span data-img="img/portfolio7.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>APP</h5>
+							<p class="subtitle">Disney - ESPN</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img="img/portfolio8.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>Mi Escuelita</h5>
+							<p class="subtitle">The Story of Emma</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img="img/portfolio5.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>APP</h5>
+							<p class="subtitle">Dieste</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img="img/portfolio2.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>Website</h5>
+							<p class="subtitle">L.A. Parks Foundation</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img="img/portfolio1.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>La llave de tu Fiat</h5>
+							<p class="subtitle">Fiat México</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img=""></span>
+						</div>
+						<div class="description">
+							<h5>Sagrado</h5>
+							<p class="subtitle">Gobernación de Santander - Colombia</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img="img/portfolio4.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>Foros Semana</h5>
+							<p class="subtitle">Grupo Semana</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img="img/portfolio6.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>Saber Mas - Ser Más</h5>
+							<p class="subtitle">Grupo Semana</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img="img/portfolio3.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>Señal Memoria</h5>
+							<p class="subtitle">Señal Colombia - Gobierno de Colombia</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img="../img/verysoon.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>Dinero</h5>
+							<p class="subtitle">Revista Dinero - Grupo Semana</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img">
+							<span data-img="../img/verysoon.jpg"></span>
+						</div>
+						<div class="description">
+							<h5>Citibank</h5>
+							<p class="subtitle">Pronto</p>
+							<div class="text">
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<p>Some of the projects in my portfolio are subject to confidential agreements, so if you like to see my private portfolio click the button below</p>
+				<div class="center">
+					<a class="button dark" href=""><span class="icon ac-talk-chat"></span>  ACCESS PRIVATE PORTFOLIO</a>
+				</div>
 			</div>
 		</section>
-		<section id="testimonials" class="section">
+<!-- 		<section id="testimonials" class="section">
 			<div class="wrapper">
 				<h4>What people say about me</h4>
 				<h6>Out of the world dev</h6>
-				
-
-
 			</div>
-		</section>
+		</section> -->
 		<section id="contact" class="section dark center">
-			<div id="map" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"></div>
 			<div class="info wow slideInLeft" data-wow-duration="0.7s" data-wow-delay="0.3s">
 				<h2>Drop me a line</h2>
-				<p>Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Ita graviter et severe voluptatem secrevit a bono. Et quod est munus, quod opus sapientiae? Ait enim se, si uratur. Paulum, cum regem Persem captum adduceret, eodem flumine invectio? Si longus, levis. </p>
+				<p>No todos los proyectos web son iguales, por eso me encantaría conocer que tiene en mente para su próximo proyecto web, solo escríbame y hablemos.</p>
+
+				<div class="contactinfo">
+					<div>
+						<strong>Teléfono:</strong>
+						(+571) 478 6788
+					</div>
+					<div>
+						<strong>Móvil:</strong>
+						(+57) 320 331 9043 - 314 220 4125
+					</div>
+					<div>
+						<strong>Dirección:</strong>
+						Cra 109A # 148 - 91 Bogotá DC, Colombia
+					</div>
+				</div>
 
 				<form action="">
 					<input type="text" name="" id="" placeholder="What's your name?">
@@ -128,6 +326,7 @@
 					<input class="submit" type="submit" value="Get in touch">
 				</form>
 			</div>
+			<div id="map" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"></div>
 		</section>
 	</section>
 
@@ -183,7 +382,7 @@
 		  	</div>
 		  </li> -->
 		  <li style=" width: 10000px; height: 10000px;" class="layer expand-width" data-depth="1.80">
-		  	<div style="opacity: 0.2; width: 500%; height: 100%; background: url('https://33.media.tumblr.com/tumblr_lyholoVeUH1qg95ipo1_500.gif') repeat;"></div>
+		  	<div style="opacity: 0.2; width: 500%; height: 100%; background: url('img/stars.gif') repeat;"></div>
 		  </li>
 		</ul>
 	</article>

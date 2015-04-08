@@ -10,6 +10,8 @@ $(document).ready(function(){
 	wowAnimations();
 	mobileMenu();
 	parallaxJS();
+	backgroundCover( "#portfolioCarousel > .item .img" );
+
 });
 
 function heightTopPosition(selector, container){
@@ -113,3 +115,33 @@ function parallaxJS(){
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
 }
+
+
+// BACKGROUND COVER
+////////////////////////////////////////////////////////////
+function backgroundCover( selector ){
+	var windowWidth = $(window).width();
+	$(selector).each(function(){
+		var imgData = $(this).find('span').data('img');
+		console.log(imgData);
+		$(this).find('span').attr('style', 'background: url('+ imgData + ')50% 50% / cover');
+	});
+}
+
+// function portfolioShowcase(){
+// 	var owl = $("#portfolioCarousel");
+// 	owl.owlCarousel({
+// 		itemsCustom : [
+// 			[0, 2],
+// 			[450, 3],
+// 			[600, 4],
+// 			[700, 4],
+// 			[1000, 4],
+// 			[1200, 4],
+// 			[1400, 5],
+// 			[1600, 5]
+// 		],
+// 		navigation : true,
+// 		navigationText:	["<div class='icon ac-chevron-left-1'></div>","<div class='icon ac-chevron-right-1'></div>"]
+// 	});
+// }

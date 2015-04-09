@@ -56,7 +56,7 @@ function customMap(){
 	    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 	    var mapOptions = {
 	        // How zoomed in you want the map to start at (always required)
-	        zoom: 11,
+	        zoom: 15,
 	        zoomControl: false,
 	        streetViewControl: false,
 	        scrollwheel: false,
@@ -64,7 +64,8 @@ function customMap(){
 	        overviewMapControl: false,
 
 	        // The latitude and longitude to center the map (always required)
-	        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+	        // center: new google.maps.LatLng(40.6700, -73.9400), // New York
+	        center: new google.maps.LatLng(4.749191, -74.097047), // New York
 
 	        // How you would like to style the map. 
 	        // This is where you would paste any style found on Snazzy Maps.
@@ -80,7 +81,7 @@ function customMap(){
 
 	    // Let's also add a marker while we're at it
 	    var marker = new google.maps.Marker({
-	        position: new google.maps.LatLng(40.6700, -73.9400),
+	        position: new google.maps.LatLng(4.749191, -74.097047),
 	        map: map,
 	        title: 'Snazzy!'
 	    });
@@ -106,9 +107,44 @@ function wowAnimations(){
 
 function mobileMenu(){
 	$('#mobileMenutrigger').click(function(){
-		$(this).toggleClass('active');
-		$('#mobileMenu').toggleClass('active');
+		$('#mobileMenu').delay(50).queue( function(next){
+			$('#mobileMenutrigger').attr('style', 'opacity: 0;');
+			$(this).attr('style', 'width: 100%; height: 3px; padding: 0;'); 
+			next();
+		}).delay(900).queue( function(next){ 
+			$(this).attr('style', 'height: 400px; top: 28%;'); 
+			next();
+		}).delay(900).queue( function(next){ 
+			$('#mobileMenutriggerClose').addClass('active');
+			$('#mobileMenutriggerClose').attr('style', 'opacity: 1;'); 
+			next();
+		});
+
+		// $(this).toggleClass('active');
+		$('#mobileMenu').delay(900).addClass('active');
 	});
+
+	$('#mobileMenutriggerClose').click(function(){
+		$('#mobileMenu').delay(50).queue( function(next){
+			$('#mobileMenutrigger').attr(' ');
+			$(this).attr('style', ' '); 
+			next();
+		}).delay(70).queue( function(next){ 
+			$(this).attr('style', ' '); 
+			next();
+		}).delay(90).queue( function(next){ 
+			$('#mobileMenutriggerClose').removeClass('active');
+			$('#mobileMenutriggerClose').attr(' ');
+			$('#mobileMenutrigger').removeClass('active');
+			$('#mobileMenutrigger').attr('style', 'opacity: 1;');
+			next();
+		});
+
+		// $(this).toggleClass('active');
+		$('#mobileMenu').delay(900).removeClass('active');
+	});
+
+
 }
 
 function parallaxJS(){
@@ -128,20 +164,5 @@ function backgroundCover( selector ){
 	});
 }
 
-// function portfolioShowcase(){
-// 	var owl = $("#portfolioCarousel");
-// 	owl.owlCarousel({
-// 		itemsCustom : [
-// 			[0, 2],
-// 			[450, 3],
-// 			[600, 4],
-// 			[700, 4],
-// 			[1000, 4],
-// 			[1200, 4],
-// 			[1400, 5],
-// 			[1600, 5]
-// 		],
-// 		navigation : true,
-// 		navigationText:	["<div class='icon ac-chevron-left-1'></div>","<div class='icon ac-chevron-right-1'></div>"]
-// 	});
-// }
+
+

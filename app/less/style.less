@@ -137,6 +137,7 @@
 @text-color: 		#4b4b4b;
 @border-color: 		#fbfbfb;
 @disable-gray: 		#C8C8C8;
+@blueLine: 			#031F44;
 
 //Absolute Position Center
 .absoluteCenter{
@@ -197,7 +198,7 @@ body{
 	}
 	a{
 		text-decoration: none;
-		transition: all 0.5s ease;
+		transition: all 0.3s ease;
 		color: @light-blue;
 
 		&:hover{
@@ -209,6 +210,7 @@ body{
 			border: solid 2px @white !important;
 			color: @white !important;
 			display: inline-block;
+			margin-bottom: 30px;
 
 			span{
 				margin-right: 4px;
@@ -302,13 +304,15 @@ body{
 
 			&.active{
 				z-index: 1000;
-				right: 20px;
-				top: 7px;
-				left: 290px;
+				right: 0;
+				top: 30%;
+				left: 0;
+				margin: 0 auto;
 				position: fixed;
 				width: 30px;
 				height: 30px;
-				border: solid 1px @disable-gray;
+				border: solid 1px @white;
+				opacity: 0;
 
 
 				&:after{
@@ -362,27 +366,98 @@ body{
 			}
 		}
 
+		.mobileMenutriggerClose{
+			position: absolute;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			display: none;
+			border: solid 2px @disable-gray;
+			left: 20px;
+			top: 20px;
+			cursor: pointer;
+			z-index: 10;
+			transition: all 0.5s ease;
+
+			&.active{
+				z-index: 1000;
+				right: 0;
+				top: 30%;
+				left: 0;
+				margin: 0 auto;
+				position: fixed;
+				width: 30px;
+				height: 30px;
+				border: solid 1px @white;
+				opacity: 0;
+				display: block;
+
+				&:after{
+					content: 'X';
+					font-size: 20px;
+					position: absolute;
+					left: 0;
+					right: 0;
+					text-align: center;
+					padding-top: 2px;
+					color: @disable-gray;
+				}
+				&:hover{
+					border: solid 1px @dark-blue;
+					width: 30px;
+					height: 30px;
+					&:after{
+						content: 'X';
+						font-size: 20px;
+						position: absolute;
+						left: 0;
+						right: 0;
+						text-align: center;
+						padding-top: 2px;
+						color: @dark-blue;
+					}
+				}
+			}
+		}
+
 		nav{
 			display: none;
 			position: fixed;
 			background: fade(@dark-blue, 65%);
-			height: 100%;
+			background: red;
+			height: 3px;
 			z-index: 100;
-			top: 0;
+			width: 100%;
+			top: 50%;
+			opacity: 0;
+			padding: 0;
+
 
 			&.active{
 				display: block !important;
 				padding: 30px 40px;
 				box-sizing: border-box;
-				width: 330px;
+				width: 100%;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				overflow: hidden;
+				transition: all 1s ease;
+				opacity: 1;
+				padding: 0;
+				top: 50%;
 			}
 
 			ul{
 				list-style: none;
 				padding: 0;
 				color: @white;
+				display: none;
 
 				li{
+					width: 100%;
+					padding: 10px 0;
+
 					&:first-child{
 						font-size: 3rem;
 						font-weight: 600;
@@ -390,6 +465,13 @@ body{
 					a{
 						color: @white;
 					}
+				}
+
+				.line{
+					display: block;
+					height: 2px;
+					background: @blueLine;
+					margin: 20px 0;
 				}
 
 				.name{
@@ -548,22 +630,38 @@ body{
 							&:nth-child(1){
 								left: 0;
 								top: 190px;
+
+								&:hover{
+									left: -20px;
+								}
 							}
 							&:nth-child(2){
 								right: 0;
 								top: 190px;
+
+								&:hover{
+									right: -20px;
+								}
 							}
 							&:nth-child(3){
 								left: 0;
 								right: 0;
 								bottom: 0px;
 								margin: 0 auto;
+
+								&:hover{
+									bottom: -20px;
+								}
 							}
 							&:nth-child(4){
 								right: 0;
 								left: 0;
 								top: 40px;
 								margin: 0 auto;
+
+								&:hover{
+									top: 20px;
+								}
 							}
 						}
 					}
@@ -571,41 +669,16 @@ body{
 			}
 			&#method{
 
-				.textLeft,
-				.iconLeft{
-					vertical-align: top;
-				}
+				.text{
+					font-size: 1rem;
+					-webkit-column-count: 2; /* Chrome, Safari, Opera */
+					-moz-column-count: 2; /* Firefox */
+					column-count: 2;
+					margin-bottom: 20px;
 
-				.textLeft{
-					width: 55%;
-					padding-right: 5%;
-					display: inline-block;
-					box-sizing: border-box;
-				}
-				.iconLeft{
-					font-size: 350px;
-					width: 43%;
-					display: inline-block;
-					padding-top: 60px;
-				}
-
-				.textRight,
-				.iconRight{
-					vertical-align: top;
-				}
-
-				.textRight{
-					width: 50%;
-					display: inline-block;
-					box-sizing: border-box;
-				}
-				.iconRight{
-					font-size: 300px;
-					padding-right: 5%;
-					width: 43%;
-					display: inline-block;
-					text-align: center;
-					padding-top: 80px;
+					p{
+						margin-top: 0;
+					}
 				}
 
 			}
@@ -613,15 +686,9 @@ body{
 			&#portfolio{
 				background: @totalWhite;
 
-				.copy{
-					// -webkit-column-count: 2; /* Chrome, Safari, Opera */
-					// -moz-column-count: 2; /* Firefox */
-					// column-count: 2;
-					margin-bottom: 70px;
-				}
-
 				#portfolioCarousel{
 					position: relative;
+					margin: 50px 0;
 
 					.item{
 						background: @mediumWhite;

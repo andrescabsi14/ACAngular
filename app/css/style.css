@@ -217,34 +217,47 @@ body a.button.dark:hover {
   background: #001926 !important;
   color: #f1f2eb !important;
 }
-body iframe {
-  display: inline-block;
-  margin: 3% auto 8% auto;
-  max-width: 430px;
+body form {
+  display: inline-block !important;
+  margin: 3% auto 8% auto !important;
+  max-width: 430px !important;
+  width: 100% !important;
+}
+body form input,
+body form textarea {
+  display: block !important;
+  padding: 10px !important;
+  width: 100% !important;
+  margin: 0 0 10px 0 !important;
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+  font-size: 14px !important;
+}
+body form .submit {
+  background-color: #009cc1 !important;
+  text-decoration: none !important;
+  border: none !important;
+  color: white !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  height: 40px !important;
+  transition: all 0.3s linear !important;
+}
+body form .submit:hover {
+  background: #333333 !important;
+}
+body form ul li {
+  width: 100% !important;
+  padding: 0 !important;
+}
+body form ul li div {
   width: 100%;
 }
-body iframe input,
-body iframe textarea {
-  display: block;
-  padding: 10px;
-  width: 100%;
-  margin: 0 0 10px 0;
-  box-sizing: border-box;
-  max-width: 100%;
-  font-size: 14px;
+body form textarea {
+  height: 14rem !important;
 }
-body iframe .submit {
-  background-color: #009cc1;
-  text-decoration: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  height: 40px;
-  transition: all 0.3s linear;
-}
-body iframe .submit:hover {
-  background: #333333;
+body form .hide {
+  display: none;
 }
 body .center {
   text-align: center;

@@ -5,7 +5,7 @@ $(document).ready(function(){
 	customMap();
 	wowAnimations();
 	mobileMenu();
-	parallaxJS();
+	// parallaxJS();
 	backgroundCover( "#portfolioCarousel > .item .img" );
 	$(window).resize(function(){
 		heightTopPosition('#home', '.container');
@@ -106,14 +106,16 @@ function wowAnimations(){
 function mobileMenu(){
 	$('#mobileMenutrigger').click(function(){
 		$('#mobileMenu').delay(50).queue( function(next){
+			$('#coverD').attr('style', 'background: rgba(0,0,0,0.90);position: fixed;width: 100%;height: 100%;top: 0;');
 			$('#mobileMenutrigger').attr('style', 'opacity: 0;');
 			$(this).attr('style', 'width: 100%; height: 3px; padding: 0;'); 
 			next();
-		}).delay(900).queue( function(next){ 
+		}).delay(500).queue( function(next){ 
 			$(this).attr('style', 'height: 400px; top: 28%;'); 
 			next();
-		}).delay(900).queue( function(next){ 
+		}).delay(700).queue( function(next){ 
 			$('#mobileMenutriggerClose').addClass('active');
+			$('.instructions').attr('style', 'opacity: 1;');
 			$('#mobileMenutriggerClose').attr('style', 'opacity: 1;'); 
 			next();
 		});
@@ -135,6 +137,8 @@ function mobileMenu(){
 			$('#mobileMenutriggerClose').attr(' ');
 			$('#mobileMenutrigger').removeClass('active');
 			$('#mobileMenutrigger').attr('style', 'opacity: 1;');
+			$('#coverD').attr('style', ' ');
+			$('.instructions').attr('style', ' ');
 			next();
 		});
 

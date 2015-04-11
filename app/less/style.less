@@ -153,7 +153,9 @@
 @border-color: 		#fbfbfb;
 @disable-gray: 		#C8C8C8;
 @blueLine: 			#031F44;
-
+@yellow: 			#f9b958;
+@gray: 				#333333;
+@red: 				#E84343;
 //Absolute Position Center
 .absoluteCenter{
 	position: absolute;
@@ -165,7 +167,7 @@
 }
 
 //Path
-@imgPath:  "../img";
+@imgPath:  "/img";
 
 html{
   height: 100%;
@@ -179,6 +181,23 @@ body{
 	-webkit-font-smoothing: antialiased;
 	background: @dark-blue;
 	overflow-y: auto !important;
+
+	.starsBg{
+
+		&:after{
+			content: ' ';
+			background: url('@{imgPath}/stars.gif') repeat;
+			width: 100%;
+			height: 100%;
+			float: left;
+			top: 0;
+			left: 0;
+			opacity: 0.2;
+			position: absolute;
+			z-index: -1;
+		}
+		
+	}
 
 	h1, h2, h3, h4, h5, h6{
 		margin: 0;
@@ -298,7 +317,7 @@ body{
 	header{
 
 		.mobileMenutrigger{
-			position: absolute;
+			position: fixed;
 			border-radius: 50%;
 			width: 40px;
 			height: 40px;
@@ -311,10 +330,11 @@ body{
 			transition: all 0.5s ease;
 
 			&:hover{
-				background: fade(@white, 100%);
 
-				span{
-					color: @dark-blue;
+				span,
+				p{
+					color: darken(@disable-gray, 20%);
+					transition: all 0.5s ease;
 				}
 			}
 
@@ -368,7 +388,7 @@ body{
 			}
 
 			span{
-				color: @white;
+				color: @disable-gray;
 				font-size: 25px;
 				padding: 8px 10px 11px 8px;
 				display: inline-block;
@@ -378,7 +398,7 @@ body{
 				left: 54px;
 				top: 9px;
 				margin: 0;
-				color: @white;
+				color: @disable-gray;
 			}
 		}
 
@@ -419,7 +439,7 @@ body{
 					color: @disable-gray;
 				}
 				&:hover{
-					border: solid 1px @dark-blue;
+					border: solid 1px @light-blue;
 					width: 30px;
 					height: 30px;
 					&:after{
@@ -430,7 +450,7 @@ body{
 						right: 0;
 						text-align: center;
 						padding-top: 2px;
-						color: @dark-blue;
+						color: @light-blue;
 					}
 				}
 			}
@@ -440,13 +460,17 @@ body{
 			display: none;
 			position: fixed;
 			background: fade(@dark-blue, 65%);
-			background: red;
+			// background: @totalWhite;
 			height: 3px;
 			z-index: 100;
 			width: 100%;
 			top: 50%;
 			opacity: 0;
 			padding: 0;
+
+			-webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+			-moz-animation: neon3 1.5s ease-in-out infinite alternate;
+			animation: neon3 1.5s ease-in-out infinite alternate; 
 
 
 			&.active{
@@ -462,6 +486,10 @@ body{
 				opacity: 1;
 				padding: 0;
 				top: 50%;
+
+				ul{
+					display: block;
+				}
 			}
 
 			ul{
@@ -469,25 +497,73 @@ body{
 				padding: 0;
 				color: @white;
 				display: none;
+				position: relative;
+				transition: all 1s ease;
+				text-align: center;
+				height: 92%;
 
 				li{
 					width: 100%;
 					padding: 10px 0;
+					position: absolute;
+					width: 200px;
+					display: inline-block;
+					height: 200px;
+					box-sizing: border-box;
+					text-align: center;
+					background: white;
+					border-radius: 50%;
+					position: relative;
+					margin: 80px 2% 0 0;
+					transition: all 1s ease;
 
 					&:first-child{
-						font-size: 3rem;
+						font-size: 8rem;
 						font-weight: 600;
+						opacity: 0.03;
+						top: 90px;
+						left: 0;
+						right: 0;
+						width: auto;
+						padding: 0;
+						display: block;
+						position: absolute;
+						background: transparent;
 					}
+
+					&:last-child{
+						margin-right: 0;
+					}
+
+					&:hover{
+						background: @light-blue;
+						border: solid 1px lighten(@light-blue, 30%);
+						a{
+							color: @totalWhite;
+						}
+					}
+
 					a{
-						color: @white;
+						color: @gray;
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: 0 auto;
+						top: 0;
+						height: 100%;
+						padding-top: 44%;
+						box-sizing: border-box;
 					}
 				}
 
-				.line{
-					display: block;
-					height: 2px;
-					background: @blueLine;
-					margin: 20px 0;
+				.instructions{
+					position: absolute;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					transition: all 1s ease;
+					bottom: 40px;
+					opacity: 0;
 				}
 
 				.name{
@@ -498,7 +574,7 @@ body{
 	}
 
 	#firstSection{
-		padding-top: 0 !important;
+		// padding-top: 0 !important;
 	}
 
 	.container{
@@ -646,17 +722,21 @@ body{
 							&:nth-child(1){
 								left: 0;
 								top: 190px;
+								background: @yellow;
 
 								&:hover{
 									left: -20px;
+									background: darken(@yellow, 5%);
 								}
 							}
 							&:nth-child(2){
 								right: 0;
 								top: 190px;
+								background: @gray;
 
 								&:hover{
 									right: -20px;
+									background: darken(@gray, 5%);
 								}
 							}
 							&:nth-child(3){
@@ -664,9 +744,11 @@ body{
 								right: 0;
 								bottom: 0px;
 								margin: 0 auto;
+								background: @light-blue;
 
 								&:hover{
 									bottom: -20px;
+									background: lighten(@light-blue, 5%);
 								}
 							}
 							&:nth-child(4){
@@ -674,9 +756,11 @@ body{
 								left: 0;
 								top: 40px;
 								margin: 0 auto;
+								background: @red;
 
 								&:hover{
 									top: 20px;
+									background: darken(@red, 5%);
 								}
 							}
 						}
@@ -684,6 +768,7 @@ body{
 				}
 			}
 			&#method{
+				position: relative;
 
 				.text{
 					font-size: 1rem;
@@ -700,7 +785,8 @@ body{
 			}
 
 			&#portfolio{
-				background: @totalWhite;
+				background: @yellow;
+				color: @gray;
 
 				#portfolioCarousel{
 					position: relative;
@@ -714,6 +800,37 @@ body{
 						width: 100%;
 						position: relative;
 						height: 400px;
+
+						&:nth-child(odd){
+
+							.description{
+								background: @totalWhite;
+								color: @gray;
+
+								.taglist{
+									span{
+										background: @yellow;
+										color: lighten(@yellow, 50%);
+										border: solid 1px darken(@yellow, 10%);
+									}
+								}
+							}
+						}
+						&:nth-child(even){
+
+							.description{
+								background: @gray;
+								color: @white;
+							}
+						}
+
+						&:hover{
+							.img{
+								span{
+									-webkit-filter: none;
+								}
+							}
+						}
 
 						.img{
 							height: 400px;
@@ -729,6 +846,8 @@ body{
 								height: 400px;
 								display: block;
 								margin: 0;
+								-webkit-filter: grayscale(100%);
+								transition: all 1s ease;
 							}
 						}
 
@@ -742,6 +861,9 @@ body{
   							position: absolute;
 							right: 0;
 							top: 0;
+							border: solid 1px @totalWhite;
+							background: @totalWhite;
+							color: @gray;
 
 							h5{
 								margin: 0;
@@ -759,6 +881,27 @@ body{
 
 								p{
 									font-size: 1rem;
+								}
+							}
+							.taglist{
+								span{
+									background: @totalWhite;
+									color: @gray;
+									padding: 4px 10px;
+									display: inline-block;
+									border: solid 1px darken(@gray, 40%);
+									border-radius: 30px;
+									font-size: 0.8rem;
+									margin: 3px 2px;
+									cursor: default;
+									transition: all .3s ease;
+
+
+									&:hover{
+										border: solid 1px @dark-blue;
+										background: @totalWhite;
+										color: @dark-blue;
+									}
 								}
 							}
 						}
@@ -785,6 +928,8 @@ body{
 				}
 			}
 			&#contact{
+				position: relative;
+
 				#map{
 					width: 100%;
 					height: 550px;
@@ -810,6 +955,11 @@ body{
 		top: -22%;
 		z-index: -1;
 	}
+
+	.coverD{
+		transition: all 1s ease;
+	}
+
 	footer{
 		background: @dark-black;
 		color: @white;
@@ -826,10 +976,185 @@ body{
 // MODALS
 //////////////////////////////////
 .modalContent{
-	background-color: @dark-blue !important;
 	padding: 4%;
 	box-sizing: border-box;
-	color: @white;
+	position: relative;
+	
+
+	&#modal-01{
+
+		.wrappercolor{
+			background-color: @yellow !important;
+			color: @gray;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 50%;
+			height: 100%;
+			padding: 4%;
+			box-sizing: border-box;
+
+			a{
+				color: lighten(@yellow, 30%)
+			}
+
+			hr{
+				border: solid 1px lighten(@yellow, 10%);
+			}
+		}
+		.white{
+			background-color: @totalWhite !important;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 50%;
+			height: 100%;
+		}
+		#btn-close-modal{
+			z-index: 100000000000000;
+			position: absolute;
+			top: 15px;
+			left: 51.5%;
+			border: solid 2px lighten(@yellow, 20%);
+			color: lighten(@yellow, 20%);
+			
+			&:hover{
+				border: solid 2px @yellow;
+				color: @yellow;	
+			}
+
+		}
+	}
+	&#modal-02{
+		.wrappercolor{
+			background-color: @gray !important;
+			color: @white;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 50%;
+			height: 100%;
+			padding: 4%;
+			box-sizing: border-box;
+
+			a{
+				color: lighten(@gray, 30%);
+			}
+
+			hr{
+				border: solid 1px @white;
+			}
+		}
+		.white{
+			background-color: @totalWhite !important;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 50%;
+			height: 100%;
+		}
+		#btn-close-modal{
+			z-index: 100000000000000;
+			position: absolute;
+			top: 15px;
+			left: 44%;
+			border: solid 2px lighten(@gray, 50%);
+			color: lighten(@gray, 50%);
+			
+			&:hover{
+				border: solid 2px @gray;
+				color: @gray;	
+			}
+
+		}
+	}
+	&#modal-03{
+		.wrappercolor{
+			background-color: @light-blue !important;
+			color: @totalWhite;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 50%;
+			padding: 4%;
+			box-sizing: border-box;
+
+			a{
+				color: @dark-blue;
+			}
+
+			hr{
+				border: solid 1px @white;
+			}
+		}
+		.white{
+			background-color: @totalWhite !important;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 50%;
+		}
+		#btn-close-modal{
+			z-index: 100000000000000;
+			position: absolute;
+			top: 15px;
+			left: 0;
+			right: 0;
+			border: solid 2px lighten(@light-blue, 10%);
+			color: lighten(@light-blue, 10%);
+			
+			&:hover{
+				border: solid 2px @light-blue;
+				color: @light-blue;	
+			}
+
+		}
+	}
+	&#modal-04{
+		.wrappercolor{
+			background-color: @red !important;
+			color: @totalWhite;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 50%;
+			padding: 4%;
+			box-sizing: border-box;
+
+			a{
+				color: darken(@red, 30%)
+			}
+
+			hr{
+				border: solid 1px lighten(@red, 10%);
+			}
+		}
+		.white{
+			background-color: @totalWhite !important;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 50%;
+		}
+		#btn-close-modal{
+			z-index: 100000000000000;
+			position: absolute;
+			top: 15px;
+			right: 2%;
+			border: solid 2px lighten(@red, 10%);
+			color: lighten(@red, 10%);
+			
+			&:hover{
+				border: solid 2px @totalWhite;
+				color: @totalWhite;	
+			}
+
+		}
+	}
 
 	#btn-close-modal{
 		width: 70px;

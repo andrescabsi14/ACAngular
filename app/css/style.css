@@ -139,6 +139,18 @@ body {
   background: #001926;
   overflow-y: auto !important;
 }
+body .starsBg:after {
+  content: ' ';
+  background: url('/img/stars.gif') repeat;
+  width: 100%;
+  height: 100%;
+  float: left;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
 body h1,
 body h2,
 body h3,
@@ -246,7 +258,7 @@ body .dark a:hover {
   color: #5be0ff;
 }
 body header .mobileMenutrigger {
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -258,11 +270,10 @@ body header .mobileMenutrigger {
   z-index: 10;
   transition: all 0.5s ease;
 }
-body header .mobileMenutrigger:hover {
-  background: #f1f2eb;
-}
-body header .mobileMenutrigger:hover span {
-  color: #001926;
+body header .mobileMenutrigger:hover span,
+body header .mobileMenutrigger:hover p {
+  color: #959595;
+  transition: all 0.5s ease;
 }
 body header .mobileMenutrigger.active {
   z-index: 1000;
@@ -308,7 +319,7 @@ body header .mobileMenutrigger.active p {
   display: none;
 }
 body header .mobileMenutrigger span {
-  color: #f1f2eb;
+  color: #c8c8c8;
   font-size: 25px;
   padding: 8px 10px 11px 8px;
   display: inline-block;
@@ -318,7 +329,7 @@ body header .mobileMenutrigger p {
   left: 54px;
   top: 9px;
   margin: 0;
-  color: #f1f2eb;
+  color: #c8c8c8;
 }
 body header .mobileMenutriggerClose {
   position: absolute;
@@ -357,7 +368,7 @@ body header .mobileMenutriggerClose.active:after {
   color: #c8c8c8;
 }
 body header .mobileMenutriggerClose.active:hover {
-  border: solid 1px #001926;
+  border: solid 1px #009cc1;
   width: 30px;
   height: 30px;
 }
@@ -369,19 +380,21 @@ body header .mobileMenutriggerClose.active:hover:after {
   right: 0;
   text-align: center;
   padding-top: 2px;
-  color: #001926;
+  color: #009cc1;
 }
 body header nav {
   display: none;
   position: fixed;
   background: rgba(0, 25, 38, 0.65);
-  background: red;
   height: 3px;
   z-index: 100;
   width: 100%;
   top: 50%;
   opacity: 0;
   padding: 0;
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
 }
 body header nav.active {
   display: block !important;
@@ -397,34 +410,79 @@ body header nav.active {
   padding: 0;
   top: 50%;
 }
+body header nav.active ul {
+  display: block;
+}
 body header nav ul {
   list-style: none;
   padding: 0;
   color: #f1f2eb;
   display: none;
+  position: relative;
+  transition: all 1s ease;
+  text-align: center;
+  height: 92%;
 }
 body header nav ul li {
   width: 100%;
   padding: 10px 0;
+  position: absolute;
+  width: 200px;
+  display: inline-block;
+  height: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  margin: 80px 2% 0 0;
+  transition: all 1s ease;
 }
 body header nav ul li:first-child {
-  font-size: 3rem;
+  font-size: 8rem;
   font-weight: 600;
+  opacity: 0.03;
+  top: 90px;
+  left: 0;
+  right: 0;
+  width: auto;
+  padding: 0;
+  display: block;
+  position: absolute;
+  background: transparent;
+}
+body header nav ul li:last-child {
+  margin-right: 0;
+}
+body header nav ul li:hover {
+  background: #009cc1;
+  border: solid 1px #5be0ff;
+}
+body header nav ul li:hover a {
+  color: #ffffff;
 }
 body header nav ul li a {
-  color: #f1f2eb;
+  color: #333333;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  height: 100%;
+  padding-top: 44%;
+  box-sizing: border-box;
 }
-body header nav ul .line {
-  display: block;
-  height: 2px;
-  background: #031f44;
-  margin: 20px 0;
+body header nav ul .instructions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: all 1s ease;
+  bottom: 40px;
+  opacity: 0;
 }
 body header nav ul .name {
   line-height: 40px;
-}
-body #firstSection {
-  padding-top: 0 !important;
 }
 body .container {
   margin: 0 auto;
@@ -560,34 +618,45 @@ body .container .section#skillsDetail .wrapper #diamond a:hover {
 body .container .section#skillsDetail .wrapper #diamond a:nth-child(1) {
   left: 0;
   top: 190px;
+  background: #f9b958;
 }
 body .container .section#skillsDetail .wrapper #diamond a:nth-child(1):hover {
   left: -20px;
+  background: #f8af3f;
 }
 body .container .section#skillsDetail .wrapper #diamond a:nth-child(2) {
   right: 0;
   top: 190px;
+  background: #333333;
 }
 body .container .section#skillsDetail .wrapper #diamond a:nth-child(2):hover {
   right: -20px;
+  background: #262626;
 }
 body .container .section#skillsDetail .wrapper #diamond a:nth-child(3) {
   left: 0;
   right: 0;
   bottom: 0px;
   margin: 0 auto;
+  background: #009cc1;
 }
 body .container .section#skillsDetail .wrapper #diamond a:nth-child(3):hover {
   bottom: -20px;
+  background: #00b1db;
 }
 body .container .section#skillsDetail .wrapper #diamond a:nth-child(4) {
   right: 0;
   left: 0;
   top: 40px;
   margin: 0 auto;
+  background: #e84343;
 }
 body .container .section#skillsDetail .wrapper #diamond a:nth-child(4):hover {
   top: 20px;
+  background: #e52c2c;
+}
+body .container .section#method {
+  position: relative;
 }
 body .container .section#method .text {
   font-size: 1rem;
@@ -602,7 +671,8 @@ body .container .section#method .text p {
   margin-top: 0;
 }
 body .container .section#portfolio {
-  background: #ffffff;
+  background: #f9b958;
+  color: #333333;
 }
 body .container .section#portfolio #portfolioCarousel {
   position: relative;
@@ -616,6 +686,22 @@ body .container .section#portfolio #portfolioCarousel .item {
   width: 100%;
   position: relative;
   height: 400px;
+}
+body .container .section#portfolio #portfolioCarousel .item:nth-child(odd) .description {
+  background: #ffffff;
+  color: #333333;
+}
+body .container .section#portfolio #portfolioCarousel .item:nth-child(odd) .description .taglist span {
+  background: #f9b958;
+  color: #ffffff;
+  border: solid 1px #f7a427;
+}
+body .container .section#portfolio #portfolioCarousel .item:nth-child(even) .description {
+  background: #333333;
+  color: #f1f2eb;
+}
+body .container .section#portfolio #portfolioCarousel .item:hover .img span {
+  -webkit-filter: none;
 }
 body .container .section#portfolio #portfolioCarousel .item .img {
   height: 400px;
@@ -631,6 +717,8 @@ body .container .section#portfolio #portfolioCarousel .item .img span {
   height: 400px;
   display: block;
   margin: 0;
+  -webkit-filter: grayscale(100%);
+  transition: all 1s ease;
 }
 body .container .section#portfolio #portfolioCarousel .item .description {
   display: inline-block;
@@ -642,6 +730,9 @@ body .container .section#portfolio #portfolioCarousel .item .description {
   position: absolute;
   right: 0;
   top: 0;
+  border: solid 1px #ffffff;
+  background: #ffffff;
+  color: #333333;
 }
 body .container .section#portfolio #portfolioCarousel .item .description h5 {
   margin: 0;
@@ -660,6 +751,23 @@ body .container .section#portfolio #portfolioCarousel .item .description .text {
 body .container .section#portfolio #portfolioCarousel .item .description .text p {
   font-size: 1rem;
 }
+body .container .section#portfolio #portfolioCarousel .item .description .taglist span {
+  background: #ffffff;
+  color: #333333;
+  padding: 4px 10px;
+  display: inline-block;
+  border: solid 1px #000000;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  margin: 3px 2px;
+  cursor: default;
+  transition: all .3s ease;
+}
+body .container .section#portfolio #portfolioCarousel .item .description .taglist span:hover {
+  border: solid 1px #001926;
+  background: #ffffff;
+  color: #001926;
+}
 body .container .section#portfolio #portfolioCarousel .item:nth-child(even) .img {
   left: initial;
   right: 0;
@@ -673,6 +781,9 @@ body .container .section#testimonials {
 }
 body .container .section#testimonials h4 {
   margin-bottom: 0;
+}
+body .container .section#contact {
+  position: relative;
 }
 body .container .section#contact #map {
   width: 100%;
@@ -695,6 +806,9 @@ body #parallaxBg {
   top: -22%;
   z-index: -1;
 }
+body .coverD {
+  transition: all 1s ease;
+}
 body footer {
   background: #000000;
   color: #f1f2eb;
@@ -706,10 +820,158 @@ body footer p {
   font-size: 0.8rem;
 }
 .modalContent {
-  background-color: #001926 !important;
   padding: 4%;
   box-sizing: border-box;
+  position: relative;
+}
+.modalContent#modal-01 .wrappercolor {
+  background-color: #f9b958 !important;
+  color: #333333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+.modalContent#modal-01 .wrappercolor a {
+  color: #fef7ec;
+}
+.modalContent#modal-01 .wrappercolor hr {
+  border: solid 1px #fbce89;
+}
+.modalContent#modal-01 .white {
+  background-color: #ffffff !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.modalContent#modal-01 #btn-close-modal {
+  z-index: 100000000000000;
+  position: absolute;
+  top: 15px;
+  left: 51.5%;
+  border: solid 2px #fde2ba;
+  color: #fde2ba;
+}
+.modalContent#modal-01 #btn-close-modal:hover {
+  border: solid 2px #f9b958;
+  color: #f9b958;
+}
+.modalContent#modal-02 .wrappercolor {
+  background-color: #333333 !important;
   color: #f1f2eb;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+.modalContent#modal-02 .wrappercolor a {
+  color: #808080;
+}
+.modalContent#modal-02 .wrappercolor hr {
+  border: solid 1px #f1f2eb;
+}
+.modalContent#modal-02 .white {
+  background-color: #ffffff !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.modalContent#modal-02 #btn-close-modal {
+  z-index: 100000000000000;
+  position: absolute;
+  top: 15px;
+  left: 44%;
+  border: solid 2px #b3b3b3;
+  color: #b3b3b3;
+}
+.modalContent#modal-02 #btn-close-modal:hover {
+  border: solid 2px #333333;
+  color: #333333;
+}
+.modalContent#modal-03 .wrappercolor {
+  background-color: #009cc1 !important;
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+.modalContent#modal-03 .wrappercolor a {
+  color: #001926;
+}
+.modalContent#modal-03 .wrappercolor hr {
+  border: solid 1px #f1f2eb;
+}
+.modalContent#modal-03 .white {
+  background-color: #ffffff !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+}
+.modalContent#modal-03 #btn-close-modal {
+  z-index: 100000000000000;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  border: solid 2px #00c5f4;
+  color: #00c5f4;
+}
+.modalContent#modal-03 #btn-close-modal:hover {
+  border: solid 2px #009cc1;
+  color: #009cc1;
+}
+.modalContent#modal-04 .wrappercolor {
+  background-color: #e84343 !important;
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+.modalContent#modal-04 .wrappercolor a {
+  color: #821010;
+}
+.modalContent#modal-04 .wrappercolor hr {
+  border: solid 1px #ee7070;
+}
+.modalContent#modal-04 .white {
+  background-color: #ffffff !important;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+}
+.modalContent#modal-04 #btn-close-modal {
+  z-index: 100000000000000;
+  position: absolute;
+  top: 15px;
+  right: 2%;
+  border: solid 2px #ee7070;
+  color: #ee7070;
+}
+.modalContent#modal-04 #btn-close-modal:hover {
+  border: solid 2px #ffffff;
+  color: #ffffff;
 }
 .modalContent #btn-close-modal {
   width: 70px;

@@ -6,6 +6,7 @@ $(document).ready(function(){
 	wowAnimations();
 	mobileMenu();
 	// parallaxJS();
+	smoothScrolling();
 	backgroundCover( "#portfolioCarousel > .item .img" );
 	$(window).resize(function(){
 		heightTopPosition('#home', '.container');
@@ -104,6 +105,7 @@ function wowAnimations(){
 }
 
 function mobileMenu(){
+
 	$('#mobileMenutrigger').click(function(){
 		$('#mobileMenu').delay(50).queue( function(next){
 			$('#coverD').attr('style', 'background: rgba(0,0,0,0.90);position: fixed;width: 100%;height: 100%;top: 0;');
@@ -146,6 +148,18 @@ function mobileMenu(){
 		$('#mobileMenu').delay(900).removeClass('active');
 	});
 
+	$('.itemsMainMenu').click(function(e){
+		$('#mobileMenu').removeClass('active');
+		$('#mobileMenutriggerClose').removeClass('active');
+		$('#mobileMenutriggerClose').attr(' ');
+		$('#mobileMenutrigger').removeClass('active');
+		$('#mobileMenutrigger').attr('style', 'opacity: 1;');
+		$('#coverD').attr('style', ' ');
+		$('.instructions').attr('style', ' ');
+		console.log(tttt);
+		console.log(e);
+	});
+
 
 }
 
@@ -165,5 +179,21 @@ function backgroundCover( selector ){
 	});
 }
 
+//Smooth Scrolling
+
+function smoothScrolling(){
+	$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
+
+		    var target = this.hash;
+		    var $target = $(target);
+
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
+}
 
 

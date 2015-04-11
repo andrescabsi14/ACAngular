@@ -217,14 +217,14 @@ body a.button.dark:hover {
   background: #001926 !important;
   color: #f1f2eb !important;
 }
-body form {
+body iframe {
   display: inline-block;
   margin: 3% auto 8% auto;
   max-width: 430px;
   width: 100%;
 }
-body form input,
-body form textarea {
+body iframe input,
+body iframe textarea {
   display: block;
   padding: 10px;
   width: 100%;
@@ -233,7 +233,7 @@ body form textarea {
   max-width: 100%;
   font-size: 14px;
 }
-body form .submit {
+body iframe .submit {
   background-color: #009cc1;
   text-decoration: none;
   border: none;
@@ -243,7 +243,7 @@ body form .submit {
   height: 40px;
   transition: all 0.3s linear;
 }
-body form .submit:hover {
+body iframe .submit:hover {
   background: #333333;
 }
 body .center {

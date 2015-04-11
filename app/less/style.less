@@ -123,6 +123,21 @@
   src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/M2Jd71oPJhLKp0zdtTvoM2Sl3jWJ3D9poyJPMfASioc.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+//VARIABLES
+/////////////////////////////
+
+//Media Queries
+@desktop:            ~"only screen and (max-width : 1263px)";
+@max-desktop:        ~"only screen and (max-width : 1145px)";
+@min-desktop:        ~"only screen and (max-width : 1024px)";
+@max-tablet:   	     ~"only screen and (max-width : 1023px)";
+@min-tablet:	     ~"only screen and (max-width : 768px)";
+@max-movil:    		 ~"only screen and (max-width: 767px)";
+@movil:    		     ~"only screen and (max-width: 600px)";
+@min-movil:    		 ~"only screen and (max-width: 320px)";
+
+//Layout
+@mx-width: 			1280px;
 
 //Colors
 @dark-blue: 		#001926;
@@ -149,8 +164,9 @@
 	text-align: center;
 }
 
-//Scale
-@mx-width: 			1280px;
+//Path
+@imgPath:  "../img";
+
 html{
   height: 100%;
 }

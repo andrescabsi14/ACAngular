@@ -4,8 +4,28 @@
 		"selected_items":
 		[
 			[
+				"add",
+				"addClass"
+			],
+			[
 				"margin",
-				"margin-bottom"
+				"margin"
+			],
+			[
+				"img",
+				"imgData"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"left",
+				"left"
 			],
 			[
 				"mari",
@@ -30,10 +50,6 @@
 			[
 				"fot",
 				"font-size"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"font",
@@ -103,15 +119,7 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 14081,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/less/style.less",
-			"settings":
-			{
-				"buffer_size": 14176,
+				"buffer_size": 20435,
 				"line_ending": "Unix"
 			}
 		},
@@ -119,7 +127,15 @@
 			"file": "app/js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 4633,
+				"buffer_size": 6232,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/less/style.less",
+			"settings":
+			{
+				"buffer_size": 17284,
 				"line_ending": "Unix"
 			}
 		}
@@ -188,6 +204,7 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Andrew/Local/AC/ACAngular/app/js/jquery.min.js",
 		"/Volumes/Andrew/Local/AC/ACAngular/app/index3.html",
 		"/Volumes/Andrew/Local/AC/ACAngular/app/js/parallax.js",
 		"/Volumes/Andrew/Local/AC/ACAngular/app/js/animatedModal.min.js",
@@ -245,6 +262,36 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" data-depth=\"0.00\"",
+			"<div class=\"item\">",
+			"<div class=\"img\">",
+			" layer\" data-depth=\"0.00\"",
+			"<div class=\"item\">",
+			" layer\" data-depth=\"0.00\"",
+			"<div class=\"img layer\"",
+			"item",
+			"<span class=\"layer\" data-depth=\"0.00\" data-img=\"",
+			"<div class=\"img\">",
+			"transitio",
+			"a.button",
+			"../",
+			"url",
+			"app/img/portfolio1.jpg",
+			"<div class=\"img\" data-img=\"img/portfolio1.jpg\"></div>",
+			"modal",
+			"modal-03",
+			"modal",
+			"modal-03",
+			"form",
+			"mediumWhite",
+			"span>",
+			"							<div class=\"line\"></div>",
+			"strong>",
+			"<strong>",
+			"<div class=\"item\">",
+			"<img src=\"\" alt=\"\">",
+			"<img src=\"/Users/andrescabrera/Desktop/Captura\\ de\\ pantalla\\ 2015-04-06\\ a\\ las\\ 3.30.23\\ p.m..pn\" alt=\"\">",
+			"30",
 			"Left",
 			"h4",
 			"mobileMenu",
@@ -318,15 +365,15 @@
 					"file": "app/index.html",
 					"settings":
 					{
-						"buffer_size": 14081,
+						"buffer_size": 20435,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7022,
-								7022
+								1739,
+								1739
 							]
 						],
 						"settings":
@@ -338,54 +385,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1501.0,
+						"translation.y": 15.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/less/style.less",
-					"settings":
-					{
-						"buffer_size": 14176,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9219,
-								9219
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/LESS/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 4682.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/js/scripts.js",
 					"settings":
 					{
-						"buffer_size": 4633,
+						"buffer_size": 6232,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4631,
-								4631
+								5413,
+								5413
 							]
 						],
 						"settings":
@@ -396,8 +414,38 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
+						"translation.x": 2.0,
+						"translation.y": 1392.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/less/style.less",
+					"settings":
+					{
+						"buffer_size": 17284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10670,
+								10670
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
 						"translation.x": 0.0,
-						"translation.y": 946.0,
+						"translation.y": 4217.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

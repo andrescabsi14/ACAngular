@@ -1,17 +1,15 @@
 $(document).ready(function(){
+
 	heightTopPosition('#home', '.container');
-
-	$(window).resize(function(){
-		heightTopPosition('#home', '.container');
-	});
-
 	triggerModals();
 	customMap();
 	wowAnimations();
 	mobileMenu();
 	parallaxJS();
 	backgroundCover( "#portfolioCarousel > .item .img" );
-
+	$(window).resize(function(){
+		heightTopPosition('#home', '.container');
+	});
 });
 
 function heightTopPosition(selector, container){
@@ -159,7 +157,6 @@ function backgroundCover( selector ){
 	var windowWidth = $(window).width();
 	$(selector).each(function(){
 		var imgData = $(this).find('span').data('img');
-		console.log(imgData);
 		$(this).find('span').attr('style', 'background: url('+ imgData + ')50% 50% / cover');
 	});
 }

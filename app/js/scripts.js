@@ -156,8 +156,6 @@ function mobileMenu(){
 		$('#mobileMenutrigger').attr('style', 'opacity: 1;');
 		$('#coverD').attr('style', ' ');
 		$('.instructions').attr('style', ' ');
-		console.log(tttt);
-		console.log(e);
 	});
 
 

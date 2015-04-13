@@ -572,7 +572,7 @@ body .container .section#home .wrapper {
   max-width: none;
 }
 body .container .section#home:before {
-  content: 'EXPERT';
+  content: 'EXPERTO';
   color: rgba(0, 156, 193, 0.15);
   opacity: 0.5;
   font-size: 16rem;

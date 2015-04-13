@@ -912,7 +912,9 @@ body footer p {
   border: solid 1px #fbce89;
 }
 .modalContent#modal-01 .white {
-  background-color: #ffffff !important;
+  background: url('/img/wp.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
   position: absolute;
   right: 0;
   top: 0;
@@ -950,7 +952,9 @@ body footer p {
   border: solid 1px #f1f2eb;
 }
 .modalContent#modal-02 .white {
-  background-color: #ffffff !important;
+  background: url('/img/less.png') no-repeat;
+  background-size: cover;
+  background-position: 0;
   position: absolute;
   left: 0;
   top: 0;
@@ -989,7 +993,9 @@ body footer p {
   border: solid 1px #f1f2eb;
 }
 .modalContent#modal-03 .white {
-  background-color: #ffffff !important;
+  background: url('/img/django.png') no-repeat;
+  background-size: 100%;
+  background-position: 50%;
   position: absolute;
   left: 0;
   top: 0;
@@ -1028,7 +1034,9 @@ body footer p {
   border: solid 1px #ee7070;
 }
 .modalContent#modal-04 .white {
-  background-color: #ffffff !important;
+  background: url('/img/angular.png') no-repeat;
+  background-size: 100%;
+  background-position: 50%;
   position: absolute;
   right: 0;
   bottom: 0;

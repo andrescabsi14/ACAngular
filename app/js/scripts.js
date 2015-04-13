@@ -6,6 +6,7 @@ $(document).ready(function(){
 	wowAnimations();
 	mobileMenu();
 	// parallaxJS();
+	inputPlaceholder();
 	smoothScrolling();
 	backgroundCover( "#portfolioCarousel > .item .img" );
 	$(window).resize(function(){
@@ -182,6 +183,28 @@ function smoothScrolling(){
 		        window.location.hash = target;
 		    });
 		});
+}
+
+function inputPlaceholder(){
+	$(function() {
+	  if (!placeholderIsSupported) {
+	    $('#search-location1')
+	    .val($('#search-location1').attr("placeholder"))
+	    .on("blur", function() {
+	      if ($(this).val() == "") {
+	        $(this).val($(this).attr("placeholder"));
+	      }
+	    })
+	    .on("focus",function() {
+	      if ($(this).val()==$(this).attr("placeholder")) $(this).val("");
+	    });
+	  }  
+	});
+
+	function placeholderIsSupported() {
+		var test = document.createElement('input');
+		return ('placeholder' in test);
+	}
 }
 
 

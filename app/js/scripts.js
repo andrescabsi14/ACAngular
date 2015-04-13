@@ -126,17 +126,17 @@ function mobileMenu(){
 		$('#mobileMenu').delay(900).addClass('active');
 	});
 
-	$('#mobileMenutriggerClose').click(function(){
-		$('#mobileMenu').delay(50).queue( function(next){
+	$('#mobileMenutriggerClose, .itemsMainMenu').click(function(){
+		$('#mobileMenu').delay(0).queue( function(next){
 			$('#mobileMenutrigger').attr(' ');
+			$('#mobileMenutriggerClose').removeClass('active');
+			$('#mobileMenutriggerClose').attr(' ');
+			$(this).attr('style', ' '); 
+			next();
+		}).delay(60).queue( function(next){ 
 			$(this).attr('style', ' '); 
 			next();
 		}).delay(70).queue( function(next){ 
-			$(this).attr('style', ' '); 
-			next();
-		}).delay(90).queue( function(next){ 
-			$('#mobileMenutriggerClose').removeClass('active');
-			$('#mobileMenutriggerClose').attr(' ');
 			$('#mobileMenutrigger').removeClass('active');
 			$('#mobileMenutrigger').attr('style', 'opacity: 1;');
 			$('#coverD').attr('style', ' ');
@@ -146,16 +146,6 @@ function mobileMenu(){
 
 		// $(this).toggleClass('active');
 		$('#mobileMenu').delay(900).removeClass('active');
-	});
-
-	$('.itemsMainMenu').click(function(e){
-		$('#mobileMenu').removeClass('active');
-		$('#mobileMenutriggerClose').removeClass('active');
-		$('#mobileMenutriggerClose').attr(' ');
-		$('#mobileMenutrigger').removeClass('active');
-		$('#mobileMenutrigger').attr('style', 'opacity: 1;');
-		$('#coverD').attr('style', ' ');
-		$('.instructions').attr('style', ' ');
 	});
 
 

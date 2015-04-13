@@ -127,8 +127,8 @@
 /////////////////////////////
 
 //Media Queries
-@desktop:            ~"only screen and (max-width : 1263px)";
-@max-desktop:        ~"only screen and (max-width : 1145px)";
+@desktop:            ~"only screen and (max-width : 1280px)";
+@max-desktop:        ~"only screen and (max-width : 1180px)";
 @min-desktop:        ~"only screen and (max-width : 1024px)";
 @max-tablet:   	     ~"only screen and (max-width : 1023px)";
 @min-tablet:	     ~"only screen and (max-width : 768px)";
@@ -138,6 +138,7 @@
 
 //Layout
 @mx-width: 			1280px;
+@mx-width-content: 	980px;
 
 //Colors
 @dark-blue: 		#001926;
@@ -181,6 +182,23 @@ body{
 	-webkit-font-smoothing: antialiased;
 	background: @dark-blue;
 	overflow-y: auto !important;
+
+	@media @max-tablet{
+		overflow: hidden;
+
+		&:after{
+			content: 'Muy pronto versión móvil';
+			background: @black;
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			text-align: center;
+			color: @white;
+			padding-top: 37%;
+		}
+	}
 
 	.starsBg{
 
@@ -345,6 +363,10 @@ body{
 			z-index: 10;
 			transition: all 0.5s ease;
 
+			@media @max-tablet{
+				display: none;
+			}
+
 			&:hover{
 
 				span,
@@ -505,6 +527,14 @@ body{
 
 				ul{
 					display: block;
+
+					li{
+						opacity: 1 !important;
+
+						&:first-child{
+							opacity: 0.05 !important;
+						}
+					}
 				}
 			}
 
@@ -532,6 +562,12 @@ body{
 					position: relative;
 					margin: 80px 2% 0 0;
 					transition: all 1s ease;
+
+					@media @max-desktop{
+						width: 150px;
+						height: 150px;
+						margin: 100px 2% 0 0;
+					}
 
 					&:first-child{
 						font-size: 8rem;
@@ -590,7 +626,10 @@ body{
 	}
 
 	#firstSection{
-		// padding-top: 0 !important;
+		@media @max-tablet{
+			overflow: hidden;
+			position: fixed;
+		}
 	}
 
 	.container{
@@ -625,6 +664,11 @@ body{
 				position: absolute;
 				left: 0;
 				right: 0;
+				max-width: none;
+
+				.wrapper{
+					max-width: none;
+				}
 
 				&:before{
 					content: 'EXPERT';
@@ -662,6 +706,7 @@ body{
 						right: 4%;
 						top: 4%;
 						color: @bold-blue;
+						display: none;
 
 						a{
 							color: @bold-blue;
@@ -995,6 +1040,18 @@ body{
 	padding: 4%;
 	box-sizing: border-box;
 	position: relative;
+
+	.wrapper{
+		max-width: @mx-width-content;
+		margin: 0 auto;
+	}
+
+	.content{
+		overflow-x: hidden;
+		overflow-y: auto;
+		max-height: 400px;
+		margin-top: 20px;
+	}
 	
 
 	&#modal-01{
@@ -1009,6 +1066,7 @@ body{
 			height: 100%;
 			padding: 4%;
 			box-sizing: border-box;
+			overflow: hidden;
 
 			a{
 				color: lighten(@yellow, 30%)
@@ -1052,6 +1110,7 @@ body{
 			height: 100%;
 			padding: 4%;
 			box-sizing: border-box;
+			overflow: hidden;
 
 			a{
 				color: lighten(@gray, 30%);
@@ -1073,7 +1132,8 @@ body{
 			z-index: 100000000000000;
 			position: absolute;
 			top: 15px;
-			left: 44%;
+			left: 0;
+			right: 93px;
 			border: solid 2px lighten(@gray, 50%);
 			color: lighten(@gray, 50%);
 			
@@ -1095,6 +1155,7 @@ body{
 			height: 50%;
 			padding: 4%;
 			box-sizing: border-box;
+			overflow: hidden;
 
 			a{
 				color: @dark-blue;
@@ -1139,6 +1200,7 @@ body{
 			height: 50%;
 			padding: 4%;
 			box-sizing: border-box;
+			overflow: hidden;
 
 			a{
 				color: darken(@red, 30%)
@@ -1196,3 +1258,4 @@ body{
 		}
 	}
 }
+

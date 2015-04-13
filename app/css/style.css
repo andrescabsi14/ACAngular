@@ -139,6 +139,23 @@ body {
   background: #001926;
   overflow-y: auto !important;
 }
+@media only screen and (max-width : 1023px) {
+  body {
+    overflow: hidden;
+  }
+  body:after {
+    content: 'Muy pronto versión móvil';
+    background: #333333;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #f1f2eb;
+    padding-top: 37%;
+  }
+}
 body .starsBg:after {
   content: ' ';
   background: url('/img/stars.gif') repeat;
@@ -283,6 +300,11 @@ body header .mobileMenutrigger {
   z-index: 10;
   transition: all 0.5s ease;
 }
+@media only screen and (max-width : 1023px) {
+  body header .mobileMenutrigger {
+    display: none;
+  }
+}
 body header .mobileMenutrigger:hover span,
 body header .mobileMenutrigger:hover p {
   color: #959595;
@@ -426,6 +448,12 @@ body header nav.active {
 body header nav.active ul {
   display: block;
 }
+body header nav.active ul li {
+  opacity: 1 !important;
+}
+body header nav.active ul li:first-child {
+  opacity: 0.05 !important;
+}
 body header nav ul {
   list-style: none;
   padding: 0;
@@ -450,6 +478,13 @@ body header nav ul li {
   position: relative;
   margin: 80px 2% 0 0;
   transition: all 1s ease;
+}
+@media only screen and (max-width : 1180px) {
+  body header nav ul li {
+    width: 150px;
+    height: 150px;
+    margin: 100px 2% 0 0;
+  }
 }
 body header nav ul li:first-child {
   font-size: 8rem;
@@ -497,6 +532,12 @@ body header nav ul .instructions {
 body header nav ul .name {
   line-height: 40px;
 }
+@media only screen and (max-width : 1023px) {
+  body #firstSection {
+    overflow: hidden;
+    position: fixed;
+  }
+}
 body .container {
   margin: 0 auto;
   height: 100%;
@@ -525,6 +566,10 @@ body .container .section#home {
   position: absolute;
   left: 0;
   right: 0;
+  max-width: none;
+}
+body .container .section#home .wrapper {
+  max-width: none;
 }
 body .container .section#home:before {
   content: 'EXPERT';
@@ -563,6 +608,7 @@ body .container .section#home .wrapper .language {
   right: 4%;
   top: 4%;
   color: #003a5a;
+  display: none;
 }
 body .container .section#home .wrapper .language a {
   color: #003a5a;
@@ -837,6 +883,16 @@ body footer p {
   box-sizing: border-box;
   position: relative;
 }
+.modalContent .wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.modalContent .content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 400px;
+  margin-top: 20px;
+}
 .modalContent#modal-01 .wrappercolor {
   background-color: #f9b958 !important;
   color: #333333;
@@ -847,6 +903,7 @@ body footer p {
   height: 100%;
   padding: 4%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .modalContent#modal-01 .wrappercolor a {
   color: #fef7ec;
@@ -884,6 +941,7 @@ body footer p {
   height: 100%;
   padding: 4%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .modalContent#modal-02 .wrappercolor a {
   color: #808080;
@@ -903,7 +961,8 @@ body footer p {
   z-index: 100000000000000;
   position: absolute;
   top: 15px;
-  left: 44%;
+  left: 0;
+  right: 93px;
   border: solid 2px #b3b3b3;
   color: #b3b3b3;
 }
@@ -921,6 +980,7 @@ body footer p {
   height: 50%;
   padding: 4%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .modalContent#modal-03 .wrappercolor a {
   color: #001926;
@@ -959,6 +1019,7 @@ body footer p {
   height: 50%;
   padding: 4%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .modalContent#modal-04 .wrappercolor a {
   color: #821010;

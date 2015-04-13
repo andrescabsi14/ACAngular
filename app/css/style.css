@@ -144,7 +144,7 @@ body {
     overflow: hidden;
   }
   body:after {
-    content: 'Muy pronto versión móvil';
+    content: 'Mobile version soon';
     background: #333333;
     width: 100%;
     height: 100%;
